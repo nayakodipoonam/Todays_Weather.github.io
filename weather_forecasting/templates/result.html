@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+  body{
+    background-image: url('../static/cld_img.jpg');
+      background-size: cover;
+      background-position: center;
+  }
+      .card {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  align-items: center;
+  margin-top: 150px;
+  margin-left: 550px;
+}
+
+.card-image {
+  height: 150px;
+  background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/draw1.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 14px;
+  color: #555;
+}
+
+
+    </style>
+</head>
+<body>
+    
+    
+    
+   
+ 
+    <div class="card">
+      <div class="card-image"></div>
+      <div class="card-content">
+        <h2 class="card-title">location:{{name}}</h2>
+        <p class="card-description">temperature of the city: {{ temp }}</p>
+        <p class="card-description">desc of the city: {{ desc }}</p>
+        <p class="card-description">humidity of the city: {{ humidity }}</p>
+        <p class="card-description">speed of the city: {{ speed }}</p>
+      </div>
+    </div>
+
+
+
+
+</body>
+</html>

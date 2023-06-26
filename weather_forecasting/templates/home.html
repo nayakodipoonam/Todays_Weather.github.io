@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecasting WebApp</title>
+    {% load static %}
+
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+    
+    <video id="background-video" autoplay loop muted poster="video/Recorded with FlexClip Screen Recorder.webm">
+        <source src="../static/nature.mp4" type="video/mp4">
+      </video>
+      <div id="welcome">
+        <h1>WELCOME</h1>
+        <h2>Want to know Weather of your City</h2>
+        
+        <button id="next" class="btn btn-primary">Get Ready</button>
+      </div>
+      <script>
+        document.getElementById('next').onclick = function() {
+            window.location.href = "{% url 'check' %}";
+        };
+    </script>
+      
+</body>
+</html>

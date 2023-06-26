@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check</title>
+    <link rel="stylesheet" href="{% static 'css/check.css' %}">
+</head>
+
+<body>
+    <div>
+        <form action="{% url 'process_form' %}" method="post">
+            {% csrf_token %}
+            <label for="city_name">Enter city name</label>
+            
+            
+            <input type="text" name="city_name" list="city">
+
+            <datalist id="city">
+                <option value="pune">
+                <option value="delhi">
+                <option value="mumbai">
+                <option value="chennai">
+                <option value="gujrat">
+              </datalist>
+            <br>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
